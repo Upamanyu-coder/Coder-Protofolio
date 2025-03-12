@@ -1,0 +1,60 @@
+@use 'colors' as *;
+@use 'mixins' as *;
+
+@media (min-width: 576px) {
+	.main {
+		&__info {
+			h1 {
+				font-size: 3rem;
+			}
+
+			h2 {
+				font-size: 3rem;
+			}
+
+			&-btn {
+				margin: 2.5rem;
+				margin-left: 0rem;
+				@include buttonS;
+			}
+		}
+
+		&__socials {
+			font-size: 2.5rem;
+
+			a {
+				padding: 1rem 3rem;
+			}
+		}
+
+		&__image {
+			margin-bottom: 6rem;
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	/// PROJECTS
+
+	.projects {
+		&__button {
+			@include buttonS;
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	/// CONTACT
+
+	.projects {
+		width: 90%;
+
+		&__contact {
+			width: 100%;
+
+			&-form {
+				button {
+					@include buttonS;
+				}
+			}
+		}
+	}
+}

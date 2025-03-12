@@ -1,0 +1,185 @@
+@use 'colors' as *;
+@use 'mixins' as *;
+
+@media (min-width: 992px) {
+	.section {
+		&__title {
+			margin-top: 3rem;
+			margin-bottom: 4rem;
+
+			h2 {
+				font-size: 5rem;
+			}
+
+			p {
+				font-size: 8rem;
+			}
+		}
+	}
+
+	.main {
+		&__info {
+			h1 {
+				font-size: 4rem;
+			}
+
+			h2 {
+				margin-top: -1rem;
+				font-size: 3.5rem;
+			}
+
+			&-btn {
+				margin: 3rem;
+				margin-left: 0rem;
+				@include buttonL;
+			}
+		}
+
+		&__socials {
+			margin-top: 2rem;
+			font-size: 3.5rem;
+
+			a {
+				padding: 1.25rem 4rem;
+				margin-right: 4rem;
+			}
+		}
+
+		&__image {
+			justify-content: center;
+
+			img {
+				width: 70%;
+				margin-right: 4rem;
+			}
+		}
+	}
+
+	nav {
+		.nav {
+			font-size: 3.5rem;
+		}
+
+		a {
+			margin: 1rem 1.5rem;
+			padding: 3.5rem;
+			border-radius: 1rem;
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	/// PROJECTS
+
+	.projects {
+		&__button {
+			margin-bottom: 6rem;
+
+			@include buttonL;
+		}
+
+		&__project {
+			flex-direction: row;
+			width: 70%;
+
+			&:nth-child(even) {
+				.projects__img {
+					order: 1;
+				}
+
+				.projects__desc {
+					align-items: flex-end;
+					text-align: right;
+				}
+			}
+		}
+
+		&__img {
+			width: 50%;
+		}
+
+		&__desc {
+			width: 50%;
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	/// CONTACT
+
+	.projects {
+		&__contact {
+			&-input {
+				font-size: 2rem;
+			}
+
+			&-element {
+				font-size: 3rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.section {
+		&__title {
+			margin-top: 5rem;
+			margin-bottom: 6rem;
+
+			h2 {
+				font-size: 6rem;
+			}
+
+			p {
+				font-size: 10rem;
+			}
+		}
+	}
+
+	.main {
+		&__info {
+			h1 {
+				font-size: 6.8rem;
+			}
+
+			h2 {
+				margin-top: -1rem;
+				font-size: 6rem;
+			}
+
+			&-btn {
+				padding: 2rem;
+				margin: 5rem;
+				margin-left: 0rem;
+				font-size: 5rem;
+			}
+		}
+
+		&__socials {
+			margin-top: 1rem;
+			font-size: 5rem;
+
+			a {
+				padding: 1.5rem 5rem;
+				margin-right: 4rem;
+			}
+		}
+
+		&__image {
+			img {
+				width: 70%;
+			}
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	/// PROJECTS
+
+	.projects {
+		&__button {
+			margin-bottom: 8rem;
+		}
+
+		&__project {
+			width: 100%;
+		}
+	}
+}
